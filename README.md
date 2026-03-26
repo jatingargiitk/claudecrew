@@ -23,16 +23,6 @@
   <img src="https://img.shields.io/badge/license-MIT-22c55e" alt="MIT" />
 </p>
 
-## Demo
-
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=AWmRSnKAwH4">
-    <img src="https://img.youtube.com/vi/AWmRSnKAwH4/maxresdefault.jpg" alt="Claude Crew Demo — microservices built by 5 parallel workers" width="720" />
-  </a>
-  <br />
-  <em>▶ One prompt → 5 parallel workers → microservices that talk to each other</em>
-</p>
-
 ---
 
 Claude Code is powerful but sequential. **Claude Crew makes it parallel** — auto-spawning worker sessions that build entire backends, frontends, and microservices simultaneously. One terminal, zero setup.
@@ -139,6 +129,15 @@ Each worker builds an **entire microservice**. They actually communicate when yo
 Workers split by directory. Go from 0% to 80%+ coverage in a single run.
 
 ## How It Works
+
+### See it in action
+
+<p align="center">
+  <video src="https://github.com/jatingargiitk/claudecrew/raw/main/docs/assets/demo.mp4" width="720" controls></video>
+</p>
+<p align="center"><em>One prompt → 5 parallel workers → microservices that talk to each other</em></p>
+
+### Architecture
 
 An orchestrator daemon runs on `localhost:7900` (SQLite for state). The MCP server exposes `crew.*` tools to your Claude session.
 
