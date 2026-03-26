@@ -132,10 +132,9 @@ Workers split by directory. Go from 0% to 80%+ coverage in a single run.
 
 ### See it in action
 
-<p align="center">
-  <video src="https://github.com/jatingargiitk/claudecrew/raw/main/docs/assets/demo.mp4" width="720" controls></video>
-</p>
-<p align="center"><em>One prompt → 5 parallel workers → microservices that talk to each other</em></p>
+[![Watch Demo](https://img.youtube.com/vi/AWmRSnKAwH4/0.jpg)](https://www.youtube.com/watch?v=AWmRSnKAwH4)
+
+*One prompt → 5 parallel workers → microservices that talk to each other*
 
 ### Architecture
 
