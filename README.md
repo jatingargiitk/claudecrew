@@ -72,11 +72,14 @@ claude --dangerously-skip-permissions
 
 Then describe what you want to build. Claude Crew automatically fans out the work — no special keywords needed.
 
-**Tip:** alias for convenience:
+**Tip:** add an alias so you can type `crew` instead of `bun ~/claudecrew/cli.ts`:
 
 ```bash
-alias crew="bun ~/claudecrew/cli.ts"
+echo 'alias crew="bun ~/claudecrew/cli.ts"' >> ~/.zshrc
+source ~/.zshrc
 ```
+
+All examples below use the `crew` alias. Without it, replace `crew` with `bun ~/claudecrew/cli.ts`.
 
 ## Examples
 
@@ -183,6 +186,8 @@ Workers are ephemeral — execute, report, exit. The leader orchestrates everyth
 
 ## CLI
 
+With the `crew` alias (see [Quick Start](#quick-start)):
+
 ```bash
 crew init              # set up .mcp.json in current project
 crew up                # start orchestrator daemon
@@ -192,6 +197,8 @@ crew jobs              # list all jobs
 crew job <job_id>      # detailed subtask status
 crew cancel <job_id>   # cancel a running job
 ```
+
+Without the alias, use `bun ~/claudecrew/cli.ts` instead of `crew`.
 
 ## Configuration
 

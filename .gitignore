@@ -1,0 +1,15 @@
+node_modules/
+*.db
+*.db-journal
+*.db-wal
+bun.lock
+package-lock.json
+yarn.lock
+.claude/
+.mcp.json
+dist/
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example

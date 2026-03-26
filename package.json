@@ -1,0 +1,22 @@
+{
+  "name": "claudecrew",
+  "version": "1.0.0",
+  "description": "Fan-out orchestration for Claude Code — auto-spawns parallel worker processes",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "orchestrator": "bun orchestrator.ts",
+    "server": "bun server.ts",
+    "cli": "bun cli.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1"
+  }
+}
